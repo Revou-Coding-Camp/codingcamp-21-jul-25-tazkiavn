@@ -1,0 +1,163 @@
+body {
+  width: 100%;
+  height: 150vh;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    #ff8fab,
+    #ffb3c6,
+    #ffe0eb,
+    #ffb3c6,
+    #ff8fab
+  );
+  color: #ff4d81;
+  font-family: Tahoma;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.container {
+  background-color: #ffb3c6;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 30px auto;
+  position: relative
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0px auto;
+  padding-bottom: 2em;
+}
+
+.due {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.due input {
+  flex: 1;
+  height: 2em;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;           /* kasih jarak antar tombol */
+  margin-top: 10px;
+  flex-wrap: wrap;     /* biar responsif kalau nggak muat */
+}
+
+.filter button {
+  width: 100px;  
+  flex: 1 1 30%;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 2px;
+  
+}
+
+input {
+  background-color: #ffe9ef;
+  border: 1px solid #FFC4D6;
+  color: #83394A;
+  border-radius: 5px;
+  margin: 3px auto; /* Tengah secara horizontal */
+  height: 2em;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+button {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background: linear-gradient(to bottom right, #ff81a5, #ff4d81);
+  border: 5px #FF5D8F;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 36%;
+  background-color: #FF5D8F;
+}
+
+button:hover {
+  background-color: #FF5D8F;
+}
+
+button:active {
+  background-color: #ff4d81; /* warna saat diklik */
+  transform: scale(0.97);
+  background: linear-gradient(to bottom right, #c63c64, #ff4d81);
+} 
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  align-items: center;
+}
+
+li {
+  background: #f7eeed;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  margin-top: 20px;
+  width: 25%;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-title {
+  flex: 1;
+  margin-left: 8px;
+  word-break: break-word;
+}
+
+.task-checkbox {
+  width: 1.2em;
+  height: 1.2em;
+  accent-color: #ff4d81; /* biar warnanya pink */
+}
